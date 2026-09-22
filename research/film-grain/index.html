@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Film Grain Rendering — Alasdair Newson, Full Professor, Université Paris Cité">
+  <title>Film Grain Rendering — Alasdair Newson</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="/">Alasdair Newson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list" id="site-nav">
+<li><a href="/">About Me</a></li>
+<li><a href="/cv/">Curriculum Vitae</a></li>
+<li><a href="/phd-thesis/">PhD thesis and HDR</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li class="has-dropdown">
+<a href="/research/">Research</a>
+<ul class="dropdown">
+<li><a href="/research/background-estimation/">Background Estimation</a></li>
+<li><a href="/research/biological-tracking/">Biological Tracking</a></li>
+<li><a href="/research/film-grain/" aria-current="page">Film Grain Rendering</a></li>
+<li><a href="/research/image-editing/">Image Editing & Autoencoders</a></li>
+<li><a href="/research/image-inpainting/">Image Inpainting</a></li>
+<li><a href="/research/radar-tracking/">Radar Tracking</a></li>
+<li><a href="/research/video-inpainting/">Video Inpainting</a></li>
+</ul></li>
+<li><a href="/software/">Software and codes</a></li>
+<li><a href="/teaching/">Teaching</a></li>
+</ul>
+    </div>
+  </header>
+  <main>
+
+    <div class="wrap page">
+      <header class="page-header">
+        <div class="section-label"><a href="/research/">Research</a> / Film grain</div>
+        <h1>Film Grain Rendering</h1>
+      </header>
+      
+      <section class="section">
+        <p>
+          Film grain is the visual texture due to silver halide crystals in analog film emulsions.
+          Synthesising it in digital images is desirable for artistic and compression purposes.
+        </p>
+      </section>
+      <section class="section panel">
+        <h3>Neural Film Grain Rendering</h3>
+        <p>
+          PhD work of <a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a> at Télécom Paris
+          (Yann Gousseau, Saïd Ladjal, Alasdair Newson): deep neural networks for analog film grain synthesis.
+        </p>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/film_grain_rendering.png"
+               alt="Neural film grain rendering: original landscape (left) and with synthesised grain (right)">
+          <figcaption>Neural film grain rendering — original (left) and with synthesised grain (right)</figcaption>
+        </figure>
+      </section>
+      <section class="section panel">
+        <h3>A Stochastic Film Grain Model for Resolution-Independent Rendering</h3>
+        <p>
+          Postdoc work at Université Paris Descartes with Julie Delon and Bruno Galerne: a physically
+          realistic stochastic model for film grain synthesis.
+        </p>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/louvre.png"
+               alt="Louvre courtyard with synthesised film grain">
+          <figcaption>Stochastic film grain rendering — Louvre courtyard</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/cary_grant.jpg" alt="Cary Grant portrait with film grain">
+          <figcaption>Cary Grant</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/rose.jpg" alt="Rose with film grain">
+          <figcaption>Rose</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/ship.jpg" alt="Ship with film grain">
+          <figcaption>Ship</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/vintage_car.jpg" alt="Vintage car with film grain">
+          <figcaption>Vintage car</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="/assets/images/film_grain_rendering/wizard_of_oz.jpg" alt="Wizard of Oz still with film grain">
+          <figcaption>Wizard of Oz</figcaption>
+        </figure>
+        <ul>
+          <li>A. Newson, J. Delon, B. Galerne — <em>Computer Graphics Forum</em> 36(8): 684–699 (2017)</li>
+          <li>A. Newson, N. Faraj, B. Galerne, J. Delon — <em>IPOL</em> 7: 165–183 (2017)</li>
+        </ul>
+        <p>
+          Software: GPU and CPU (IPOL demo) versions — see
+          <a href="/software/">Software and codes</a>.
+        </p>
+      </section>
+    
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; Alasdair Newson</span>
+      <span>
+        <a href="https://github.com/alasdairnewson">GitHub</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

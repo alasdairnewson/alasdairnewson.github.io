@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Background Estimation — Alasdair Newson, Full Professor, Université Paris Cité">
+  <title>Background Estimation — Alasdair Newson</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="/">Alasdair Newson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list" id="site-nav">
+<li><a href="/">About Me</a></li>
+<li><a href="/cv/">Curriculum Vitae</a></li>
+<li><a href="/phd-thesis/">PhD thesis and HDR</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li class="has-dropdown">
+<a href="/research/">Research</a>
+<ul class="dropdown">
+<li><a href="/research/background-estimation/" aria-current="page">Background Estimation</a></li>
+<li><a href="/research/biological-tracking/">Biological Tracking</a></li>
+<li><a href="/research/film-grain/">Film Grain Rendering</a></li>
+<li><a href="/research/image-editing/">Image Editing & Autoencoders</a></li>
+<li><a href="/research/image-inpainting/">Image Inpainting</a></li>
+<li><a href="/research/radar-tracking/">Radar Tracking</a></li>
+<li><a href="/research/video-inpainting/">Video Inpainting</a></li>
+</ul></li>
+<li><a href="/software/">Software and codes</a></li>
+<li><a href="/teaching/">Teaching</a></li>
+</ul>
+    </div>
+  </header>
+  <main>
+
+    <div class="wrap page">
+      <header class="page-header">
+        <div class="section-label"><a href="/research/">Research</a> / Background estimation</div>
+        <h1>Background Estimation in Videos</h1>
+      </header>
+      
+      <section class="section">
+        <p>
+          Background estimation is a fundamental task of computer vision. Indeed, in problems such as
+          tracking or object recognition in videos, a good background estimation is usually a
+          prerequisite. This is because these subsequent tasks are much easier if we know where to
+          look for interesting objects, in particular if we know where the foreground is (when we
+          track objects, we are generally interested in foreground objects).
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Publications in this research area</h2>
+        <ul>
+          <li>
+            <em>Low-Rank Spatio-Temporal Video Segmentation</em>,
+            A. Newson, M. Tepper, G. Sapiro, BMVC 2015
+          </li>
+          <li>
+            <em>Multi-temporal Foreground Detection in Videos</em>,
+            M. Tepper, A. Newson, P. Sprechmann, G. Sapiro, ICIP 2015 —
+            <a href="http://www.marianotepper.com.ar/multitemporal">Project webpage</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <p>
+          Here is an example of background/foreground estimation (thanks to
+          <a href="http://dev.ipol.im/~jlezama/">Jose Lezama</a> for appearing in this video):
+        </p>
+        <figure class="figure figure-row">
+          <div>
+            <img src="/assets/images/background_estimation/background_input.png" alt="Input frame from a video">
+            <figcaption>Input image (one frame of a video)</figcaption>
+          </div>
+          <div>
+            <img src="/assets/images/background_estimation/background_output.png" alt="Estimated background">
+            <figcaption>Estimated background</figcaption>
+          </div>
+        </figure>
+      </section>
+
+      <section class="section panel">
+        <h3>Robust Principal Component Analysis (RPCA)</h3>
+        <p>
+          Candès et al. introduced an approach which is widely known as Robust Principal Component
+          Analysis <a href="https://dl.acm.org/doi/10.1145/1970392.1970395">[1]</a> (even if other
+          works had previously proposed robustified PCAs
+          <a href="https://ieeexplore.ieee.org/document/937541">[2]</a>), which could be used for
+          tasks such as background estimation. The central idea of this work is to robustify
+          traditional Principal Component Analysis, a data analysis method which is very popular, but
+          can break down in the presence of outliers. This is done by decomposing an input matrix
+          (the video, in our case) into the sum of a low-rank and a sparse component. More precisely,
+          we solve the following convex optimisation problem:
+        </p>
+        <p style="text-align:center; margin:1.25rem 0; font-size:1.05rem;">
+          min<sub>L,S</sub>
+          &nbsp;‖X − L − S‖<sub>F</sub><sup>2</sup>
+          + λ<sub>*</sub> ‖L‖<sub>*</sub>
+          + λ<sub>1</sub> ‖S‖<sub>1</sub>
+        </p>
+        <p>
+          where <em>X</em> is the input matrix (our video), <em>L</em> is the low-rank background
+          component and <em>S</em> is the sparse foreground component. The norms ‖·‖<sub>F</sub>,
+          ‖·‖<sub>*</sub> and ‖·‖<sub>1</sub> correspond to the Frobenius matrix norm, the nuclear
+          norm and the ℓ<sub>1</sub> norm, respectively. The two parameters λ<sub>*</sub> and
+          λ<sub>1</sub> are tuning parameters.
+        </p>
+      </section>
+    
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; Alasdair Newson</span>
+      <span>
+        <a href="https://github.com/alasdairnewson">GitHub</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

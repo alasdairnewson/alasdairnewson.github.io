@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Image Editing — Alasdair Newson, Full Professor, Université Paris Cité">
+  <title>Image Editing — Alasdair Newson</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="/">Alasdair Newson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list" id="site-nav">
+<li><a href="/">About Me</a></li>
+<li><a href="/cv/">Curriculum Vitae</a></li>
+<li><a href="/phd-thesis/">PhD thesis and HDR</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li class="has-dropdown">
+<a href="/research/">Research</a>
+<ul class="dropdown">
+<li><a href="/research/background-estimation/">Background Estimation</a></li>
+<li><a href="/research/biological-tracking/">Biological Tracking</a></li>
+<li><a href="/research/film-grain/">Film Grain Rendering</a></li>
+<li><a href="/research/image-editing/" aria-current="page">Image Editing & Autoencoders</a></li>
+<li><a href="/research/image-inpainting/">Image Inpainting</a></li>
+<li><a href="/research/radar-tracking/">Radar Tracking</a></li>
+<li><a href="/research/video-inpainting/">Video Inpainting</a></li>
+</ul></li>
+<li><a href="/software/">Software and codes</a></li>
+<li><a href="/teaching/">Teaching</a></li>
+</ul>
+    </div>
+  </header>
+  <main>
+
+    <div class="wrap page">
+      <header class="page-header">
+        <div class="section-label"><a href="/research/">Research</a> / Image editing</div>
+        <h1>Image Editing and Autoencoders</h1>
+      </header>
+      
+      <section class="section">
+        <p>
+          Image editing is the process of modifying the visual, often times semantic, content of an
+          image. An example is to remove or add glasses to an image of a face. This is useful mostly
+          for artistic purposes (advertising, film post-production). These algorithms often use
+          generative models or Autoencoders. Here are some of the works I have carried out on this
+          subject.
+        </p>
+      </section>
+
+      <section class="section panel">
+        <h3>Image editing using Generative Models</h3>
+        <p>
+          Here is a link to the work of
+          <a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a>, my former PhD
+          student, at Télécom Paris (Saïd Ladjal, Yann Gousseau, Alasdair Newson), on image editing
+          using GANs and diffusion models:
+        </p>
+        <ul>
+          <li><a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a></li>
+        </ul>
+        <p>
+          Here is a list of publications linked to the work of
+          <a href="https://xu-yao.github.io/">Xu Yao</a>, my former PhD student, in collaboration
+          between InterDigital (Pierre Hellier) and Télécom Paris (Yann Gousseau, Alasdair Newson),
+          on image editing with GANs:
+        </p>
+        <ul>
+          <li>
+            Feature-style Encoder for Style-Based GAN Inversion,
+            X. Yao, A. Newson, Y. Gousseau, P. Hellier, ECCV 2022 —
+            <a href="https://arxiv.org/abs/2202.02183">Paper</a>
+          </li>
+          <li>
+            A Latent Transformer for Disentangled Face Editing in Images and Videos,
+            X. Yao, A. Newson, Y. Gousseau, P. Hellier, ICCV 2021 —
+            <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Yao_A_Latent_Transformer_for_Disentangled_Face_Editing_in_Images_and_ICCV_2021_paper.pdf">Paper</a>,
+            <a href="https://github.com/InterDigitalInc/latent-transformer">Code</a>
+          </li>
+          <li>
+            Learning Non-Linear Disentangled Editing For StyleGAN,
+            X. Yao, A. Newson, Y. Gousseau, P. Hellier, ICIP 2021 —
+            <a href="https://xu-yao.github.io/files/2021ICIP_Disentanglement_final_version.pdf">Paper</a>
+          </li>
+          <li>
+            High Resolution Face Age Editing,
+            X. Yao, G. Puy, A. Newson, Y. Gousseau, P. Hellier, ICPR 2020 —
+            <a href="https://arxiv.org/abs/2005.04410">Paper</a>,
+            <a href="https://github.com/InterDigitalInc/HRFAE">Code</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section panel">
+        <h3>A short description of autoencoders</h3>
+        <p>
+          Autoencoders are (often deep) neural networks which project to and from a latent space
+          which is of smaller dimensionality than the input data domain.
+        </p>
+        <figure class="figure">
+          <img src="/assets/images/autoencoders/autoencoder.png" alt="Illustration of an autoencoder: encoder, latent space, and decoder">
+          <figcaption>Illustration of an autoencoder</figcaption>
+        </figure>
+        <p>
+          The main idea behind this is to use the compact and powerful latent space to understand,
+          analyse and manipulate the input data in a much more high-level manner than in the data
+          space. In the following projects, we try to study these architectures in detail in simple
+          cases (images of shapes) and we propose new architectures and loss functions to create
+          latent spaces with useful properties. More precisely, we are interested in the following
+          questions:
+        </p>
+        <ul>
+          <li>
+            How can we build autoencoders with latent spaces with useful structural properties
+            (independence of components, organisation of attributes in latent space)?
+          </li>
+          <li>
+            Can we describe the precise mechanisms which allow autoencoders to encode and decode
+            simple images?
+          </li>
+          <li>How to use autoencoder or GAN-type networks to carry out image editing</li>
+        </ul>
+      </section>
+
+      <section class="section panel">
+        <h3>Principal Component Analysis Autoencoder</h3>
+        <p>
+          <strong>PCAAE: Principal Component Analysis Autoencoder for organising the latent space of
+          generative networks</strong>
+        </p>
+        <p>
+          This is the work of Chi-Hieu Pham (postdoc), supervised by Saïd Ladjal, Alasdair Newson.
+          The goal is to create an autoencoder which mimics the behaviour of a PCA, which can then
+          be used for image editing. Here is an example of such editing:
+        </p>
+        <figure class="figure">
+          <img src="/assets/images/autoencoders/pca_ae.png" alt="PCA-AE editing examples: hair colour and head pose control">
+          <figcaption>PCA-AE editing — (a) hair colour controlling, (b) head pose controlling</figcaption>
+        </figure>
+        <p>
+          The paper can be found here:
+          <a href="https://arxiv.org/abs/2006.07827">Paper</a>
+        </p>
+      </section>
+
+      <section class="section panel">
+        <h3>Processing Simple Geometric Attributes with Autoencoders</h3>
+        <p>
+          Alasdair Newson, Andrés Almansa, Yann Gousseau, Saïd Ladjal<br>
+          <em>Journal of Mathematical Imaging and Vision</em>, 2020 —
+          <a href="https://hal.archives-ouvertes.fr/hal-02271281v1">Paper</a>
+        </p>
+        <h4>Abstract</h4>
+        <p>
+          Image synthesis is a core problem in modern deep learning, and many recent architectures
+          such as autoencoders and Generative Adversarial networks produce spectacular results on
+          highly complex data, such as images of faces or landscapes. While these results open up a
+          wide range of new, advanced synthesis applications, there is also a severe lack of
+          theoretical understanding of how these networks work. This results in a wide range of
+          practical problems, such as difficulties in training, the tendency to sample images with
+          little or no variability, and generalisation problems. In this paper, we propose to
+          analyse the ability of the simplest generative network, the autoencoder, to encode and
+          decode two simple geometric attributes: size and position. We believe that, in order to
+          understand more complicated tasks, it is necessary to first understand how these networks
+          process simple attributes. For the first property, we analyse the case of images of
+          centred disks with variable radii. We explain how the autoencoder projects these images
+          to and from a latent space of smallest possible dimension, a scalar. In particular, we
+          describe both the encoding process and a closed-form solution to the decoding training
+          problem in a network without biases, and show that during training, the network indeed
+          finds this solution. We then investigate the best regularisation approaches which yield
+          networks that generalise well. For the second property, position, we look at the encoding
+          and decoding of Dirac delta functions, also known as &ldquo;one-hot&rdquo; vectors. We
+          describe a hand-crafted filter that achieves encoding perfectly, and show that the network
+          naturally finds this filter during training. We also show experimentally that the decoding
+          can be achieved if the dataset is sampled in an appropriate manner. We hope that the
+          insights given here will provide better understanding of the precise mechanisms used by
+          generative networks, and will ultimately contribute to producing more robust and
+          generalisable networks.
+        </p>
+      </section>
+    
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; Alasdair Newson</span>
+      <span>
+        <a href="https://github.com/alasdairnewson">GitHub</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>

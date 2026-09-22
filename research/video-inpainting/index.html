@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Video Inpainting — Alasdair Newson, Full Professor, Université Paris Cité">
+  <title>Video Inpainting — Alasdair Newson</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="/">Alasdair Newson</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <ul class="nav-list" id="site-nav">
+<li><a href="/">About Me</a></li>
+<li><a href="/cv/">Curriculum Vitae</a></li>
+<li><a href="/phd-thesis/">PhD thesis and HDR</a></li>
+<li><a href="/publications/">Publications</a></li>
+<li class="has-dropdown">
+<a href="/research/">Research</a>
+<ul class="dropdown">
+<li><a href="/research/background-estimation/">Background Estimation</a></li>
+<li><a href="/research/biological-tracking/">Biological Tracking</a></li>
+<li><a href="/research/film-grain/">Film Grain Rendering</a></li>
+<li><a href="/research/image-editing/">Image Editing & Autoencoders</a></li>
+<li><a href="/research/image-inpainting/">Image Inpainting</a></li>
+<li><a href="/research/radar-tracking/">Radar Tracking</a></li>
+<li><a href="/research/video-inpainting/" aria-current="page">Video Inpainting</a></li>
+</ul></li>
+<li><a href="/software/">Software and codes</a></li>
+<li><a href="/teaching/">Teaching</a></li>
+</ul>
+    </div>
+  </header>
+  <main>
+
+    <div class="wrap page">
+      <header class="page-header">
+        <div class="section-label"><a href="/research/">Research</a> / Video inpainting</div>
+        <h1>Video Inpainting</h1>
+      </header>
+      
+      <section class="section panel">
+        <h3>Diffusion-based Video Inpainting</h3>
+        <p>
+          The goal of this project, which is the PhD work of
+          <a href="https://ncherel.github.io/">Nicolas Cherel</a>, in collaboration between
+          Télécom Paris (Yann Gousseau, Alasdair Newson) and Université Paris Cité (Andrés Almansa),
+          is to use diffusion models for video inpainting. It concerns the following publications:
+        </p>
+        <ul>
+          <li>
+            <em>Infusion: Internal Diffusion for Video Inpainting</em>,
+            N. Cherel, A. Almansa, Y. Gousseau, A. Newson, 2024 —
+            <a href="https://arxiv.org/abs/2311.01090">Preprint</a> ·
+            <a href="https://infusion.telecom-paris.fr/">Project</a> ·
+            <a href="https://github.com/ncherel/infusion">Code</a>
+          </li>
+          <li>
+            <em>Diffusion-Based Image Inpainting with Internal Learning</em>,
+            N. Cherel, A. Almansa, Y. Gousseau, A. Newson, EUSIPCO 2024 —
+            <a href="https://arxiv.org/abs/2406.04206">Paper</a>
+          </li>
+        </ul>
+        <p>
+          For more information, see the webpage of
+          <a href="https://ncherel.github.io/">Nicolas Cherel</a>.
+        </p>
+      </section>
+
+      <section class="section panel">
+        <h3>Patch-based Video Inpainting</h3>
+        <p>
+          This was part of my PhD work, in collaboration between Technicolor
+          (Matthieu Fradet, Patrick Pérez) and Télécom ParisTech (Andrés Almansa, Yann Gousseau).
+          The goal is to use a patch-based approach to video inpainting. Here is an example of such
+          an inpainting:
+        </p>
+        <figure class="figure figure-row">
+          <div>
+            <img src="/assets/images/video_inpainting/video_inpainting_in.png" alt="Input video frame with occlusion">
+            <figcaption>Input frame</figcaption>
+          </div>
+          <div>
+            <img src="/assets/images/video_inpainting/video_inpainting_out.png" alt="Inpainted video frame">
+            <figcaption>Inpainted frame</figcaption>
+          </div>
+        </figure>
+
+        <h3>Abstract</h3>
+        <p>
+          We propose an automatic video inpainting algorithm which relies on the optimisation of a
+          global, patch-based functional. Our algorithm is able to deal with a variety of challenging
+          situations which naturally arise in video inpainting, such as the correct reconstruction of
+          dynamic textures, multiple moving objects and moving background. Furthermore, we achieve
+          this in an order of magnitude less execution time with respect to the state-of-the-art.
+          We are also able to achieve good quality results on high definition videos. Finally, we
+          provide specific algorithmic details to make implementation of our algorithm as easy as
+          possible. The resulting algorithm requires no segmentation or manual input other than the
+          definition of the inpainting mask, and can deal with a wider variety of situations than is
+          handled by previous work.
+        </p>
+        <p>
+          Original project webpage:
+          <a href="http://perso.telecom-paristech.fr/~gousseau/video_inpainting/">Project webpage</a>
+        </p>
+
+        <h3>Citing this work</h3>
+        <p>If you wish to use our work or code, please cite the following paper:</p>
+        <p>
+          <strong>Video Inpainting of Complex Scenes</strong><br>
+          Alasdair Newson, Andrés Almansa, Matthieu Fradet, Yann Gousseau, Patrick Pérez<br>
+          <em>SIAM Journal on Imaging Sciences</em> 2014 7:4, 1993–2019
+        </p>
+        <p class="download-list">
+          <a href="http://perso.telecom-paristech.fr/~gousseau/video_inpainting/Video_inpainting_complex_scenes.pdf">Download paper</a>
+          ·
+          <a href="https://drive.google.com/open?id=1h1RugTCjmIPw7-cGLQ5KTZajV8QQRVx6">Video inpainting code</a>
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Video inpainting examples</h2>
+
+        <div class="panel">
+          <h3>Input video — Fontaine, Châtelet</h3>
+          <p>Input video:</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/hnwo-HlzGE8" title="Fontaine Châtelet — input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTNDdUX3Q4ZnNNbXc/view?usp=sharing">Download the input video</a></li>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTV1hyMFp5bkJ2RkU/view?usp=sharing">Download the occlusion mask (AVI)</a></li>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTVEUxdVE1VVJ0OGs/view?usp=sharing">Occlusion mask (.mat)</a></li>
+          </ul>
+          <p>Our inpainting result (slowed down by a factor of two for visualisation):</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/yyPm-PW6W7Y" title="Fontaine Châtelet — result" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p><a href="https://drive.google.com/file/d/0B34L9p-ehVeTVEEwOV9pVEpjN3c/view?usp=sharing">Download our inpainting result</a></p>
+        </div>
+
+        <div class="panel">
+          <h3>Input video — Les Loulous</h3>
+          <p>Input video:</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/no4sOApQPV4" title="Les Loulous — input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTMUhVUnQ2WGFSM2s/view?usp=sharing">Download the video</a></li>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTV1hyMFp5bkJ2RkU/view?usp=sharing">Occlusion mask (AVI)</a></li>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTQmlrbXFGVTlMZkk/view?usp=sharing">Occlusion mask (.mat)</a></li>
+          </ul>
+          <p>Our inpainting result (slowed down by a factor of two for visualisation):</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/2N0omfghhIc" title="Les Loulous — result" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p><a href="https://drive.google.com/file/d/0B34L9p-ehVeTczJCUVR1blpiRlk/view?usp=sharing">Download inpainting result</a></p>
+        </div>
+
+        <div class="panel">
+          <h3>Input video — Young Jaws</h3>
+          <p>Input video:</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/cZfrtu9cwjw" title="Young Jaws — input" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <ul>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTZm9za3QtYTVzRkE/view?usp=sharing">Young Jaws input</a></li>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTZDAycEVLRy1iS1U/view?usp=sharing">Occlusion (AVI)</a></li>
+            <li><a href="https://drive.google.com/file/d/0B34L9p-ehVeTbFFSOXZud0dmTHM/view?usp=sharing">Occlusion (.mat)</a></li>
+          </ul>
+          <p>Our result (slowed down by a factor of two for visualisation):</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/dgrw7PlR9Gc" title="Young Jaws — result" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p><a href="https://drive.google.com/file/d/0B34L9p-ehVeTaUQwS093NGp5M1E/view?usp=sharing">Download inpainting result</a></p>
+        </div>
+
+        <div class="panel">
+          <h3>Input video — Museum</h3>
+          <p>
+            This example is from the work of Miguel Granados et al.:
+            <em>How not to be seen: Object removal from videos of crowded scenes</em>,
+            M. Granados, K. Kim, J. Tompkin, O. Grau, J. Kautz and C. Theobalt,
+            Computer Graphics Forum (EUROGRAPHICS), 2012.
+          </p>
+          <p>
+            To download the input and masks of this work, see
+            <a href="http://gvv.mpi-inf.mpg.de/projects/vidinp/">How Not to be Seen — Miguel Granados</a>.
+          </p>
+          <p>Comparison with Granados et al. (their result above, ours below):</p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/znQxjpnL1WI" title="Museum — comparison with Granados et al." allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p><a href="https://drive.google.com/file/d/0B34L9p-ehVeTajN3Q2JsRjR5TjA/view?usp=sharing">Museum, our result</a></p>
+        </div>
+
+        <div class="panel">
+          <h3>Input video — Duo</h3>
+          <p>
+            This example is also from Granados et al. (EUROGRAPHICS 2012).
+            Comparison (their result above, ours below):
+          </p>
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/MtflFvj8coQ" title="Duo — comparison with Granados et al." allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <p><a href="https://drive.google.com/file/d/0B34L9p-ehVeTaEJEWW1Vd0lxU3M/view?usp=sharing">Duo, our result</a></p>
+        </div>
+      </section>
+    
+    </div>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; Alasdair Newson</span>
+      <span>
+        <a href="https://github.com/alasdairnewson">GitHub</a>
+      </span>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
