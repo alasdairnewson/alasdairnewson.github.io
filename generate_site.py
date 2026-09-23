@@ -170,15 +170,17 @@ ABOUT_BODY = """
       <section class="section">
         <div class="section-label">Group</div>
         <h2>PhD students and postdocs</h2>
-        <ul class="people-list">
-          <li><a href="https://pegah-kh.github.io/">Pegah Khayatan</a></li>
+        <ul class="people-list people-list-vertical">
+          <li><a href="https://nathanielcohen3.github.io/">Nathaniel Cohen</a> (since 2026)</li>
+          <li>Antoine Crosnier (since 2026)</li>
+          <li><a href="https://pegah-kh.github.io/">Pegah Khayatan</a> (since 2025)</li>
           <li>Kimia Sadreddini (PhD student since 2025)</li>
           <li>Ali Joundi (PhD student since 2023)</li>
           <li>Jules Ripoll (PhD student since 2023)</li>
         </ul>
 
         <h3>Former PhD students and postdocs</h3>
-        <ul class="people-list">
+        <ul class="people-list people-list-vertical">
           <li><a href="https://research.pasteur.fr/en/member/raphael-reme/">Raphael Reme</a></li>
           <li><a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a></li>
           <li><a href="https://perso.telecom-paristech.fr/nicherel/">Nicolas Cherel</a></li>

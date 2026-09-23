@@ -441,6 +441,10 @@ main { overflow-x: clip; }
   padding: 0;
 }
 
+.people-list-vertical {
+  columns: 1;
+}
+
 .people-list li {
   break-inside: avoid;
   padding: 0.25rem 0;
