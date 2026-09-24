@@ -24,6 +24,7 @@ NAV_ITEMS = [
     ),
     ("Software and codes", "/software/", None),
     ("Teaching", "/teaching/", None),
+    ("Misc", "/misc/", None),
 ]
 
 
@@ -926,11 +927,6 @@ IMG_INP_BODY = research_page(
         <p>
           Part of my PhD work (2014), later published in IPOL 2017 with an online demo and source code.
         </p>
-        <p>
-          Matlab multi-resolution patch-based code:
-          <a href="/assets/pdfs/matlab-image-inpainting.zip">Download</a>
-          (place archive in <code>assets/pdfs/</code> or update the link).
-        </p>
       </section>
     """,
 )
@@ -1035,7 +1031,7 @@ VID_INP_BODY = research_page(
         <p class="download-list">
           <a href="http://perso.telecom-paristech.fr/~gousseau/video_inpainting/Video_inpainting_complex_scenes.pdf">Download paper</a>
           ·
-          <a href="https://drive.google.com/open?id=1h1RugTCjmIPw7-cGLQ5KTZajV8QQRVx6">Video inpainting code</a>
+          <a href="https://perso.telecom-paristech.fr/gousseau/video_inpainting/">Video Inpainting of Complex Scenes</a>
         </p>
       </section>
 
@@ -1150,8 +1146,8 @@ SOFTWARE_BODY = """
         <ul>
           <li>Diffusion-based video inpainting (Nicolas Cherel, 2024) —
             <a href="https://perso.telecom-paristech.fr/nicherel/">project page</a></li>
-          <li>Patch-based video inpainting (SIIMS 2014) —
-            <a href="http://perso.telecom-paristech.fr/~gousseau/video_inpainting/Video_inpainting_code_newson.tar.gz">Download code</a></li>
+          <li>Video Inpainting of Complex Scenes —
+            <a href="https://perso.telecom-paristech.fr/gousseau/video_inpainting/">Project &amp; code</a></li>
         </ul>
       </section>
 
@@ -1161,9 +1157,6 @@ SOFTWARE_BODY = """
           <li>Diffusion-based image inpainting (Nicolas Cherel, EUSIPCO 2024) —
             <a href="https://perso.telecom-paristech.fr/nicherel/">project page</a></li>
           <li>Non-local patch-based image inpainting (IPOL 2017) — online demo &amp; source on IPOL</li>
-          <li>Matlab multi-resolution code —
-            <a href="/assets/pdfs/matlab-image-inpainting.zip">Download</a>
-            <span style="color:var(--muted)">(add archive)</span></li>
         </ul>
       </section>
 
@@ -1260,6 +1253,25 @@ TEACHING_BODY = """
     </div>
 """
 
+# ——— Misc ———
+MISC_BODY = """
+    <div class="wrap page">
+      <header class="page-header">
+        <div class="section-label">Odds and ends</div>
+        <h1>Misc</h1>
+      </header>
+
+      <section class="section">
+        <blockquote class="poem">
+          <p>An iamb&rsquo;s not an iamb</p>
+          <p>A trochee&rsquo;s a trochee</p>
+          <p>A spondee is not a spondee</p>
+        </blockquote>
+        <p class="poem-prompt">Can you figure out what is interesting about this poem? :)</p>
+      </section>
+    </div>
+"""
+
 
 def main() -> None:
     write("index.html", page("About Me", "/", ABOUT_BODY, "Alasdair Newson — Full Professor, MAP5, Université Paris Cité", body_class="home"))
@@ -1276,6 +1288,7 @@ def main() -> None:
     write("research/video-inpainting/index.html", page("Video Inpainting", "/research/video-inpainting/", VID_INP_BODY))
     write("software/index.html", page("Software and codes", "/software/", SOFTWARE_BODY))
     write("teaching/index.html", page("Teaching", "/teaching/", TEACHING_BODY))
+    write("misc/index.html", page("Misc", "/misc/", MISC_BODY))
 
     assets_readme = """# Assets to add
 

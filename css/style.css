@@ -462,6 +462,27 @@ main { overflow-x: clip; }
   border-bottom-color: var(--accent-glow);
 }
 
+.poem {
+  margin: 1.5rem 0 1rem;
+  padding: 0;
+  border: none;
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.25rem;
+  line-height: 1.85;
+  font-style: italic;
+  color: var(--text);
+}
+
+.poem p {
+  margin: 0.15rem 0;
+}
+
+.poem-prompt {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 1.25rem;
+}
+
 /* —— Cards (research hub) —— */
 .card-grid {
   display: grid;
