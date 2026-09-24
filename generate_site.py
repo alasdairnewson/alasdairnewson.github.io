@@ -1167,8 +1167,7 @@ SOFTWARE_BODY = """
             <a href="https://perso.telecom-paristech.fr/glesne/">project page</a></li>
           <li>Stochastic film grain (IPOL 2017) — demo &amp; CPU code on IPOL</li>
           <li>GPU version —
-            <a href="/assets/pdfs/film-grain-gpu.zip">Download</a>
-            <span style="color:var(--muted)">(add archive)</span></li>
+            <a href="https://github.com/alasdairnewson/film_grain_rendering_gpu">GitHub</a></li>
         </ul>
       </section>
     </div>
@@ -1263,9 +1262,9 @@ MISC_BODY = """
 
       <section class="section">
         <blockquote class="poem">
-          <p>An iamb&rsquo;s not an iamb</p>
-          <p>A trochee&rsquo;s a trochee</p>
-          <p>A spondee is not a spondee</p>
+          <p>Iamb&rsquo;s no iamb</p>
+          <p>Spondee is not a spondee</p>
+          <p>Trochee&rsquo;s a trochee</p>
         </blockquote>
         <p class="poem-prompt">Can you figure out what is interesting about this poem? :)</p>
       </section>
