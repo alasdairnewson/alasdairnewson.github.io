@@ -1256,7 +1256,6 @@ TEACHING_BODY = """
 MISC_BODY = """
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Odds and ends</div>
         <h1>Misc</h1>
       </header>
 
@@ -1266,7 +1265,6 @@ MISC_BODY = """
           <p>Spondee is not a spondee</p>
           <p>Trochee&rsquo;s a trochee</p>
         </blockquote>
-        <p class="poem-prompt">Can you figure out what is interesting about this poem? :)</p>
       </section>
     </div>
 """
