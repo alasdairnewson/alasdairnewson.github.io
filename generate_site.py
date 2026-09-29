@@ -7,7 +7,6 @@ ROOT = Path(__file__).resolve().parent
 NAV_ITEMS = [
     ("About Me", "/", None),
     ("Curriculum Vitae", "/cv/", None),
-    ("PhD thesis and HDR", "/phd-thesis/", None),
     ("Publications", "/publications/", None),
     (
         "Research",
@@ -349,32 +348,6 @@ CV_BODY = """
     </div>
 """
 
-# ——— PhD / HDR ———
-PHD_BODY = """
-    <div class="wrap page">
-      <header class="page-header">
-        <h1>PhD thesis and HDR</h1>
-        <p class="lead">Habilitation and doctoral dissertation.</p>
-      </header>
-
-      <section class="section panel">
-        <h3>Habilitation à Diriger des Recherches (2023 / 2024)</h3>
-        <p class="pub-title">On Several Mathematical and Data-Driven Models for Image and Video Editing, Synthesis and Analysis</p>
-        <p class="pub-authors">Alasdair Newson · Institut Polytechnique de Paris</p>
-        <p class="download-list"><a href="https://hal.science/tel-04198797v1" target="_blank" rel="noopener">Manuscript on HAL</a></p>
-      </section>
-
-      <section class="section panel">
-        <h3>PhD thesis (2014)</h3>
-        <p class="pub-title">On Video Completion: Line Scratch Detection in Films and Video Inpainting of Complex Scenes</p>
-        <p class="pub-authors">Alasdair Newson · Technicolor &amp; Télécom ParisTech</p>
-        <p class="download-list">
-          <a href="https://drive.google.com/file/d/12VBOSJxyWhwxKF-oQ11yrG-214xxwvaT/view?usp=sharing" target="_blank" rel="noopener">Manuscript (PDF)</a>
-        </p>
-      </section>
-    </div>
-"""
-
 # ——— Publications (condensed but complete by year) ———
 PUBLICATIONS = [
     ("2025", [
@@ -518,13 +491,13 @@ PUBS_BODY = f"""
         <h2>Theses</h2>
         <article class="pub">
           <div class="pub-title">On Several Mathematical and Data-Driven Models for Image and Video Editing, Synthesis and Analysis</div>
-          <div class="pub-authors">A. Newson, 2023/2024 — HDR</div>
-          <div class="pub-links"><a href="/phd-thesis/">Details</a></div>
+          <div class="pub-authors">A. Newson · Institut Polytechnique de Paris, 2023/2024 — HDR</div>
+          <div class="pub-links"><a href="https://hal.science/tel-04198797v1" target="_blank" rel="noopener">Manuscript on HAL</a></div>
         </article>
         <article class="pub">
           <div class="pub-title">On Video Completion: Line Scratch Detection in Films and Video Inpainting of Complex Scenes</div>
-          <div class="pub-authors">A. Newson, 2014 — PhD</div>
-          <div class="pub-links"><a href="/phd-thesis/">Details</a></div>
+          <div class="pub-authors">A. Newson · Technicolor &amp; Télécom ParisTech, 2014 — PhD</div>
+          <div class="pub-links"><a href="https://drive.google.com/file/d/12VBOSJxyWhwxKF-oQ11yrG-214xxwvaT/view?usp=sharing" target="_blank" rel="noopener">Manuscript (PDF)</a></div>
         </article>
       </section>
     </div>
@@ -1301,7 +1274,6 @@ NOTES_BODY = """
 def main() -> None:
     write("index.html", page("About Me", "/", ABOUT_BODY, "Alasdair Newson — Full Professor, MAP5, Université Paris Cité", body_class="home"))
     write("cv/index.html", page("Curriculum Vitae", "/cv/", CV_BODY))
-    write("phd-thesis/index.html", page("PhD thesis and HDR", "/phd-thesis/", PHD_BODY))
     write("publications/index.html", page("Publications", "/publications/", PUBS_BODY))
     write("research/index.html", page("Research", "/research/", RESEARCH_BODY))
     write("research/background-estimation/index.html", page("Background Estimation", "/research/background-estimation/", BG_BODY))

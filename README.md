@@ -6,11 +6,12 @@ Static site for [alasdairnewson.github.io](https://alasdairnewson.github.io).
 
 - `/` — About me (home)
 - `/cv/` — Curriculum Vitae
-- `/phd-thesis/` — PhD and HDR
-- `/publications/` — Publications
+- `/publications/` — Publications (including theses)
 - `/research/` — Research hub and topic subpages
 - `/software/` — Software and codes
 - `/teaching/` — Teaching
+- `/notes/` — Notes
+- `/misc/` — Misc
 
 Shared styles: `css/style.css`. Shared script: `js/main.js`.
 
