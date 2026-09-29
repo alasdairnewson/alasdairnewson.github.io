@@ -140,8 +140,7 @@ ABOUT_BODY = """
       </section>
 
       <section class="section">
-        <div class="section-label">News</div>
-        <h2>Recent updates</h2>
+        <h2>News</h2>
         <ul class="news-list">
           <li>
             Paper &ldquo;Diff-CA: Separating Common and Salient Factors with Diffusion Models&rdquo;, with
@@ -175,7 +174,6 @@ ABOUT_BODY = """
       </section>
 
       <section class="section">
-        <div class="section-label">Group</div>
         <h2>PhD students and postdocs</h2>
         <ul class="people-list people-list-vertical">
           <li><a href="https://nathanielcohen3.github.io/">Nathaniel Cohen</a> (since 2026)</li>
