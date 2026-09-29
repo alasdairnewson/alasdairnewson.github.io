@@ -194,9 +194,9 @@ ABOUT_BODY = """
 
         <h3>Former PhD students and postdocs</h3>
         <ul class="people-list people-list-vertical">
-          <li><a href="https://research.pasteur.fr/en/member/raphael-reme/">Raphael Reme</a></li>
-          <li><a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a></li>
-          <li><a href="https://perso.telecom-paristech.fr/nicherel/">Nicolas Cherel</a></li>
+          <li><a href="https://research.pasteur.fr/en/member/raphael-reme/">Raphaël Reme</a> (now postdoc with Institut Pasteur)</li>
+          <li><a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a> (now Research Engineer at GE Health)</li>
+          <li><a href="https://perso.telecom-paristech.fr/nicherel/">Nicolas Cherel</a> (now Research Engineer at Disney Research, Zurich)</li>
           <li>Chi-Hieu Pham (now Maître de Conférences, Université de Bretagne Occidentale)</li>
           <li><a href="https://arthurouaknine.github.io/">Arthur Ouaknine</a> (now postdoc, MILA)</li>
           <li><a href="https://xu-yao.github.io/">Xu Yao</a> (now research scientist, Zoox)</li>
