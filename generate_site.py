@@ -196,7 +196,6 @@ ABOUT_BODY = """
       </section>
 
       <section class="section">
-        <div class="section-label">Network</div>
         <h2>Collaborators</h2>
         <p>I have had the great pleasure to collaborate with the following people:</p>
         <ul class="people-list">
