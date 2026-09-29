@@ -1273,14 +1273,6 @@ MISC_BODY = """
         <h1>Misc</h1>
       </header>
 
-      <section class="section">
-        <blockquote class="poem">
-          <p>Iamb&rsquo;s no iamb</p>
-          <p>Spondee is not a spondee</p>
-          <p>Trochee&rsquo;s a trochee</p>
-        </blockquote>
-      </section>
-
       <section class="section panel">
         <p>
           Here are some details of the steps necessary to go from Equations 1–2 in the following
@@ -1298,6 +1290,14 @@ MISC_BODY = """
         <p class="download-list">
           <a href="/assets/pdfs/Distribution_Matching.pdf">Distribution Matching notes (PDF)</a>
         </p>
+      </section>
+
+      <section class="section">
+        <blockquote class="poem">
+          <p>Iamb&rsquo;s no iamb</p>
+          <p>Spondee is not a spondee</p>
+          <p>Trochee&rsquo;s a trochee</p>
+        </blockquote>
       </section>
     </div>
 """
