@@ -350,6 +350,18 @@ CV_BODY = """
 
 # ——— Publications (condensed but complete by year) ———
 PUBLICATIONS = [
+    ("2026", [
+        ("Diff-CA: Separating Common and Salient Factors with Diffusion Models", "M. Soumm, A. Fournier Montgieux, Y. He, P. Gori, A. Newson", "NeurIPS 2026 (spotlight)",
+         [("Preprint", "https://arxiv.org/abs/2606.06120")]),
+        ("When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs", "P. Khayatan, J. Parekh, A. Dapogny, M. Shukor, A. Newson, M. Cord", "NeurIPS 2026",
+         [("Preprint", "https://arxiv.org/abs/2604.21911")]),
+        ("AURA: AUdio-dRiven streaming Avatar", "N. Cohen, N. Dufour, A. Royer, P. Pérez, A. Newson", "BMVC 2026",
+         [("Project", "https://nathanielcohen3.github.io/aura_website/")]),
+        ("Stochastic Orthogonal Regularization for Deep Projective Priors", "A. Joundi, Y. Traonmilin, A. Newson", "SIAM Journal on Imaging Sciences",
+         [("Preprint", "https://arxiv.org/abs/2505.13078")]),
+        ("FlowID: Enhancing Forensic Identification with Latent Flow-Matching Models", "J. Ripoll, D. Bertoin, C. Dossal, A. Newson", "IJCAI 2026 (AI and Social Good Track)",
+         [("Project", "https://jrpll.github.io/flowid/")]),
+    ]),
     ("2025", [
         ("Neural Film Grain Rendering", "G. Lesné, Y. Gousseau, S. Ladjal, A. Newson", "Eurographics 2025",
          [("Code", "https://gwilherm-lesne.github.io/"), ("Paper", "https://hal.science/hal-04667141")]),
