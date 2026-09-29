@@ -171,12 +171,6 @@ ABOUT_BODY = """
             <em>IJCAI 2026</em> (AI and Social Good Track).
             <span class="links"><a href="https://jrpll.github.io/flowid/">Project page</a></span>
           </li>
-          <li>
-            Paper &ldquo;Learning to Steer: Input-dependent Steering for Multimodal LLMs&rdquo;, with
-            Jayneel Parekh, Pegah Khayatan, Mustafa Shukor, Arnaud Dapogny and Matthieu Cord,
-            was accepted to <em>NeurIPS 2025</em>.
-            <span class="links"><a href="https://arxiv.org/abs/2508.12815">Preprint</a></span>
-          </li>
         </ul>
       </section>
 
