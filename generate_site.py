@@ -1280,6 +1280,25 @@ MISC_BODY = """
           <p>Trochee&rsquo;s a trochee</p>
         </blockquote>
       </section>
+
+      <section class="section panel">
+        <p>
+          Here are some details of the steps necessary to go from Equations 1–2 in the following
+          publication:
+        </p>
+        <ul>
+          <li>
+            <em>One-step Diffusion with Distribution Matching Distillation</em>,
+            Tianwei Yin et al., CVPR 2024
+          </li>
+        </ul>
+        <p>
+          This is purely for educational purposes, and if it was helpful, please cite my webpage.
+        </p>
+        <p class="download-list">
+          <a href="/assets/pdfs/Distribution_Matching.pdf">Distribution Matching notes (PDF)</a>
+        </p>
+      </section>
     </div>
 """
 
