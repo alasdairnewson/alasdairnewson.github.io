@@ -24,6 +24,7 @@ NAV_ITEMS = [
     ),
     ("Software and codes", "/software/", None),
     ("Teaching", "/teaching/", None),
+    ("Notes", "/notes/", None),
     ("Misc", "/misc/", None),
 ]
 
@@ -236,7 +237,6 @@ ABOUT_BODY = """
 CV_BODY = """
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Curriculum Vitae</div>
         <h1>Curriculum Vitae</h1>
         <p class="lead">Full Professor, MAP5 lab, Université Paris Cité · British &amp; French</p>
       </header>
@@ -353,7 +353,6 @@ CV_BODY = """
 PHD_BODY = """
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Theses</div>
         <h1>PhD thesis and HDR</h1>
         <p class="lead">Habilitation and doctoral dissertation.</p>
       </header>
@@ -511,7 +510,6 @@ def pubs_html() -> str:
 PUBS_BODY = f"""
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Bibliography</div>
         <h1>Publications</h1>
         <p class="lead">Journal and conference papers, with links to papers, code and project pages where available.</p>
       </header>
@@ -536,7 +534,6 @@ PUBS_BODY = f"""
 RESEARCH_BODY = """
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Topics</div>
         <h1>Research</h1>
         <p class="lead">I have worked on, or am working on, the following topics.</p>
       </header>
@@ -582,11 +579,10 @@ RESEARCH_BODY = """
 """
 
 
-def research_page(title: str, kicker: str, content: str) -> str:
+def research_page(title: str, content: str) -> str:
     return f"""
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label"><a href="/research/">Research</a> / {kicker}</div>
         <h1>{title}</h1>
       </header>
       {content}
@@ -596,7 +592,6 @@ def research_page(title: str, kicker: str, content: str) -> str:
 
 BG_BODY = research_page(
     "Background Estimation in Videos",
-    "Background estimation",
     """
       <section class="section">
         <p>
@@ -672,7 +667,6 @@ BG_BODY = research_page(
 
 BIO_BODY = research_page(
     "Biological Tracking",
-    "Biological tracking",
     """
       <section class="section">
         <p>
@@ -698,7 +692,6 @@ BIO_BODY = research_page(
 
 FILM_BODY = research_page(
     "Film Grain Rendering",
-    "Film grain",
     """
       <section class="section">
         <p>
@@ -763,7 +756,6 @@ FILM_BODY = research_page(
 
 EDIT_BODY = research_page(
     "Image Editing and Autoencoders",
-    "Image editing",
     """
       <section class="section">
         <p>
@@ -910,7 +902,6 @@ EDIT_BODY = research_page(
 
 IMG_INP_BODY = research_page(
     "Image Inpainting",
-    "Image inpainting",
     """
       <section class="section">
         <p>
@@ -947,7 +938,6 @@ IMG_INP_BODY = research_page(
 
 RADAR_BODY = research_page(
     "Radar Tracking",
-    "Radar tracking",
     """
       <section class="section">
         <p>
@@ -968,7 +958,6 @@ RADAR_BODY = research_page(
 
 VID_INP_BODY = research_page(
     "Video Inpainting",
-    "Video inpainting",
     """
       <section class="section panel">
         <h3>Diffusion-based Video Inpainting</h3>
@@ -1144,7 +1133,6 @@ VID_INP_BODY = research_page(
 SOFTWARE_BODY = """
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Code</div>
         <h1>Software and codes</h1>
         <p class="lead">Open implementations and demos related to my research.</p>
       </header>
@@ -1191,7 +1179,6 @@ SOFTWARE_BODY = """
 TEACHING_BODY = """
     <div class="wrap page">
       <header class="page-header">
-        <div class="section-label">Courses</div>
         <h1>Teaching</h1>
         <p class="lead">Current and previous teaching activities.</p>
       </header>
@@ -1273,6 +1260,22 @@ MISC_BODY = """
         <h1>Misc</h1>
       </header>
 
+      <section class="section">
+        <blockquote class="poem">
+          <p>Iamb&rsquo;s no iamb</p>
+          <p>Spondee is not a spondee</p>
+          <p>Trochee&rsquo;s a trochee</p>
+        </blockquote>
+      </section>
+    </div>
+"""
+
+NOTES_BODY = """
+    <div class="wrap page">
+      <header class="page-header">
+        <h1>Notes</h1>
+      </header>
+
       <section class="section panel">
         <p>
           Here are some details of the steps necessary to go from Equations 1–2 in the following
@@ -1290,14 +1293,6 @@ MISC_BODY = """
         <p class="download-list">
           <a href="/assets/pdfs/Distribution_Matching.pdf">Distribution Matching notes (PDF)</a>
         </p>
-      </section>
-
-      <section class="section">
-        <blockquote class="poem">
-          <p>Iamb&rsquo;s no iamb</p>
-          <p>Spondee is not a spondee</p>
-          <p>Trochee&rsquo;s a trochee</p>
-        </blockquote>
       </section>
     </div>
 """
@@ -1318,6 +1313,7 @@ def main() -> None:
     write("research/video-inpainting/index.html", page("Video Inpainting", "/research/video-inpainting/", VID_INP_BODY))
     write("software/index.html", page("Software and codes", "/software/", SOFTWARE_BODY))
     write("teaching/index.html", page("Teaching", "/teaching/", TEACHING_BODY))
+    write("notes/index.html", page("Notes", "/notes/", NOTES_BODY))
     write("misc/index.html", page("Misc", "/misc/", MISC_BODY))
 
     assets_readme = """# Assets to add
