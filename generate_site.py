@@ -118,6 +118,10 @@ ABOUT_BODY = """
           <div class="about-grid">
             <div class="about-text">
               <p>
+                I am currently Full Professor at Université Paris Cité, in the Mathematics for Imaging
+                team in the MAP5 lab, where I am working on deep learning for image processing.
+              </p>
+              <p>
                 I completed my PhD in image and video processing in March 2014 under the supervision
                 of Andrés Almansa, Yann Gousseau and Patrick Pérez, with Technicolor and Télécom Paris.
                 My research interests include image and video inpainting and restoration, statistical
@@ -125,10 +129,6 @@ ABOUT_BODY = """
                 I spent one year as a Postdoc researcher with the team of Guillermo Sapiro, after which
                 I spent one year at Paris Descartes (Paris, France) with Julie Delon and Bruno Galerne.
                 From 2018–2023 I was assistant professor with Télécom Paris.
-              </p>
-              <p>
-                I am currently Full Professor at Université Paris Cité, in the Mathematics for Imaging
-                team in the MAP5 lab, where I am working on deep learning for image processing.
               </p>
             </div>
             <div class="portrait-wrap">
