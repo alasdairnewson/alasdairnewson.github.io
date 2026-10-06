@@ -291,7 +291,7 @@ main { overflow-x: clip; }
 .hero-social a {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.35rem;
   font-size: 0.88rem;
   font-weight: 500;
   color: var(--ink-soft);
@@ -301,8 +301,8 @@ main { overflow-x: clip; }
 }
 
 .hero-social-icon {
-  width: 1.15rem;
-  height: 1.15rem;
+  width: 0.85rem;
+  height: 0.85rem;
   flex-shrink: 0;
   opacity: 0.88;
 }

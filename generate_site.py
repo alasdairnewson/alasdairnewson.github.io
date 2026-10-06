@@ -1279,6 +1279,7 @@ NOTES_BODY = """
         </ul>
         <p>
           This is purely for educational purposes, and if it was helpful, please cite my webpage.
+          But most importantly, of course, please cite the original paper.
         </p>
         <p class="download-list">
           <a href="/assets/pdfs/Distribution_Matching.pdf">Distribution Matching notes (PDF)</a>
