@@ -93,14 +93,6 @@ def write(rel: str, html: str) -> None:
 # ——— About / Home ———
 ABOUT_BODY = """
     <section class="hero wrap">
-      <p class="hero-social">
-        <a href="https://scholar.google.com/citations?user=hQ07GR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">
-          <svg class="hero-social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 13.5L5 12v4.5c0 2.1 3.6 3.5 7 3.5s7-1.4 7-3.5V12l-7 4.5z"/>
-          </svg>
-          Google Scholar
-        </a>
-      </p>
       <h1>Alasdair Newson</h1>
       <p class="subtitle">Full Professor, MAP5 lab, Université Paris Cité</p>
     </section>
@@ -133,6 +125,24 @@ ABOUT_BODY = """
                   Add <strong>alasdair_portrait.jpg</strong><br>to assets/images/
                 </div>
               </picture>
+              <ul class="profile-links">
+                <li>
+                  <a href="https://scholar.google.com/citations?user=hQ07GR8AAAAJ&amp;hl=en" target="_blank" rel="noopener">
+                    <svg class="profile-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3zm0 13.5L5 12v4.5c0 2.1 3.6 3.5 7 3.5s7-1.4 7-3.5V12l-7 4.5z"/>
+                    </svg>
+                    Google Scholar
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/alasdairnewson" target="_blank" rel="noopener">
+                    <svg class="profile-link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2C6.477 2 2 6.586 2 12.253c0 4.537 2.865 8.387 6.839 9.748.5.094.683-.222.683-.486 0-.24-.009-.875-.014-1.717-2.782.62-3.369-1.38-3.369-1.38-.455-1.185-1.11-1.501-1.11-1.501-.908-.638.069-.625.069-.625 1.004.072 1.532 1.06 1.532 1.06.892 1.57 2.341 1.116 2.91.854.091-.665.35-1.116.636-1.372-2.22-.26-4.555-1.143-4.555-5.086 0-1.124.39-2.043 1.029-2.763-.103-.26-.446-1.302.098-2.713 0 0 .84-.276 2.75 1.055A9.3 9.3 0 0 1 12 6.912a9.3 9.3 0 0 1 2.504.346c1.909-1.331 2.748-1.055 2.748-1.055.546 1.411.203 2.453.1 2.713.64.72 1.028 1.639 1.028 2.763 0 3.953-2.338 4.823-4.566 5.078.359.318.679.945.679 1.904 0 1.374-.012 2.482-.012 2.82 0 .266.18.584.688.485C19.138 20.637 22 16.787 22 12.253 22 6.586 17.523 2 12 2z"/>
+                    </svg>
+                    GitHub
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
