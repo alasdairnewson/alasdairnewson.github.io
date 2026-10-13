@@ -194,12 +194,12 @@ ABOUT_BODY = """
           <li>Antoine Crosnier (since 2026)</li>
           <li><a href="https://pegah-kh.github.io/">Pegah Khayatan</a> (since 2025)</li>
           <li>Kimia Sadreddini (PhD student since 2025)</li>
-          <li>Ali Joundi (PhD student since 2023)</li>
           <li>Jules Ripoll (PhD student since 2023)</li>
         </ul>
 
         <h3>Former PhD students and postdocs</h3>
         <ul class="people-list people-list-vertical">
+          <li>Ali Joundi</li>
           <li><a href="https://research.pasteur.fr/en/member/raphael-reme/">Raphaël Reme</a> (now postdoc with Institut Pasteur)</li>
           <li><a href="https://perso.telecom-paristech.fr/glesne/">Gwilherm Lesné</a> (now Research Engineer at GE Health)</li>
           <li><a href="https://perso.telecom-paristech.fr/nicherel/">Nicolas Cherel</a> (now Research Engineer at Disney Research, Zurich)</li>
