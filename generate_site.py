@@ -277,7 +277,7 @@ CV_BODY = """
           <li>
             <span class="when">Jan. 2017 – May 2018</span>
             <span class="what">Postdoc</span>
-            <div class="where">Télécom Paris — Stochastic models for film grain synthesis</div>
+            <div class="where">Télécom Paris — Analysis of autoencoders applied to geometric shapes</div>
           </li>
           <li>
             <span class="when">Sept. 2015 – Dec. 2016</span>
