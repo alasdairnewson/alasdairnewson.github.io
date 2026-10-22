@@ -160,7 +160,7 @@ ABOUT_BODY = """
             Paper &ldquo;Diff-CA: Separating Common and Salient Factors with Diffusion Models&rdquo;, with
             Michaël Soumm, Alexandre Fournier Montgieux, Yunlong He and Pietro Gori, was accepted to
             <em>NeurIPS 2026</em> as a spotlight!
-            <span class="links"><a href="https://arxiv.org/abs/2606.06120">Preprint</a></span>
+            <span class="links"><a href="https://arxiv.org/abs/2606.06120">Preprint</a> · <a href="https://msoumm.github.io/Diff-CA/">Project page</a></span>
           </li>
           <li>
             Paper &ldquo;When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs&rdquo;, with
@@ -363,7 +363,7 @@ CV_BODY = """
 PUBLICATIONS = [
     ("2026", [
         ("Diff-CA: Separating Common and Salient Factors with Diffusion Models", "M. Soumm, A. Fournier Montgieux, Y. He, P. Gori, A. Newson", "NeurIPS 2026 (spotlight)",
-         [("Preprint", "https://arxiv.org/abs/2606.06120")]),
+         [("Preprint", "https://arxiv.org/abs/2606.06120"), ("Project", "https://msoumm.github.io/Diff-CA/")]),
         ("When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs", "P. Khayatan, J. Parekh, A. Dapogny, M. Shukor, A. Newson, M. Cord", "NeurIPS 2026",
          [("Preprint", "https://arxiv.org/abs/2604.21911")]),
         ("AURA: AUdio-dRiven streaming Avatar", "N. Cohen, N. Dufour, A. Royer, P. Pérez, A. Newson", "BMVC 2026",
