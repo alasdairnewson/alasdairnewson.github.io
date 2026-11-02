@@ -824,42 +824,130 @@ main { overflow-x: clip; }
 
 /* —— Responsive —— */
 @media (max-width: 900px) {
-  .nav-toggle { display: inline-block; }
+  .site-header {
+    height: auto;
+    min-height: 3.75rem;
+  }
+
+  .nav-inner {
+    align-items: center;
+    padding: 0.65rem 1rem;
+    min-height: 3.75rem;
+  }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    min-height: 2.6rem;
+    min-width: 3.25rem;
+    padding: 0.55rem 0.9rem;
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    background: rgba(42, 157, 143, 0.28);
+    border: 1.5px solid var(--accent-bright);
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .nav-toggle::before {
+    content: "";
+    display: block;
+    width: 1.05rem;
+    height: 0.75rem;
+    background:
+      linear-gradient(var(--white), var(--white)) 0 0 / 100% 2px no-repeat,
+      linear-gradient(var(--white), var(--white)) 0 50% / 100% 2px no-repeat,
+      linear-gradient(var(--white), var(--white)) 0 100% / 100% 2px no-repeat;
+  }
+
+  .nav-toggle[aria-expanded="true"] {
+    background: var(--accent);
+    border-color: var(--accent-bright);
+  }
 
   .nav-list {
     display: none;
     position: absolute;
-    top: var(--nav-h);
+    top: 100%;
     left: 0;
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    background: var(--ink);
-    padding: 0.75rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    gap: 0.15rem;
+    background: #0a1f28;
+    padding: 0.65rem 0.75rem 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+    gap: 0.2rem;
+    max-height: calc(100vh - 3.75rem);
+    overflow-y: auto;
   }
 
   .nav-list.open { display: flex; }
+
+  .nav-list > li {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-list a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.85rem 0.9rem;
+    color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+  }
+
+  .nav-list a:hover,
+  .nav-list a[aria-current="page"] {
+    background: rgba(42, 157, 143, 0.22);
+    color: var(--white);
+  }
+
+  .nav-list a[aria-current="page"] {
+    box-shadow: inset 3px 0 0 var(--accent-bright);
+  }
+
+  .has-dropdown > a::after {
+    margin-left: 0.5rem;
+    opacity: 0.9;
+  }
 
   .has-dropdown .dropdown {
     position: static;
     display: none;
     box-shadow: none;
     border: none;
-    background: rgba(255, 255, 255, 0.04);
-    margin: 0.25rem 0 0.5rem 0.5rem;
-    padding: 0.25rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    margin: 0.15rem 0 0.35rem 0.35rem;
+    padding: 0.3rem;
   }
 
   .has-dropdown.open .dropdown { display: block; }
 
-  .dropdown a { color: rgba(255, 255, 255, 0.85); }
-  .dropdown a:hover { background: rgba(255, 255, 255, 0.08); color: var(--white); }
+  .dropdown a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    padding: 0.75rem 0.85rem;
+  }
+
+  .dropdown a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+  }
 
   .about-grid {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 1.5rem;
   }
 
   .about-grid .about-text { text-align: left; }
@@ -869,9 +957,58 @@ main { overflow-x: clip; }
   }
 
   .people-list { columns: 1; }
+
+  .hero-social a {
+    font-size: 1rem;
+    min-height: 2.25rem;
+  }
+
+  .figure-row {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px) {
-  .hero { padding: 2.5rem 0 1.75rem; }
-  .page { padding: 1.75rem 0 3rem; }
+  .hero {
+    padding: 1.75rem 0 1.35rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+  }
+
+  .hero .subtitle {
+    font-size: 0.98rem;
+    padding: 0 0.25rem;
+  }
+
+  .page {
+    padding: 1.5rem 0 2.75rem;
+  }
+
+  .about-band {
+    padding: 1.75rem 0.85rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .portrait {
+    width: min(100%, 220px);
+  }
+
+  .wrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .year-block h3 {
+    font-size: 0.78rem;
+  }
+
+  .pub-title {
+    font-size: 1.02rem;
+  }
 }
