@@ -157,6 +157,11 @@ ABOUT_BODY = """
         <h2>News</h2>
         <ul class="news-list">
           <li>
+            Paper &ldquo;Long-Term Prediction of Atrial Fibrillation Severity from Echocardiography Video&rdquo;,
+            with Kimia Sadreddini, Laurie Soulat-Dufour, Maharajah Ponnaiah, Ariel Cohen and Stéphane Hatem,
+            was accepted to the <em>MICCAI Workshop on Machine Learning in Medical Imaging</em>!
+          </li>
+          <li>
             Paper &ldquo;Diff-CA: Separating Common and Salient Factors with Diffusion Models&rdquo;, with
             Michaël Soumm, Alexandre Fournier Montgieux, Yunlong He and Pietro Gori, was accepted to
             <em>NeurIPS 2026</em> as a spotlight!
@@ -171,7 +176,7 @@ ABOUT_BODY = """
           <li>
             Paper &ldquo;AURA: AUdio-dRiven streaming Avatar&rdquo;, with Nathaniel Cohen, Nicolas Dufour,
             Amélie Royer and Patrick Pérez, was accepted to <em>BMVC 2026</em>!
-            <span class="links"><a href="https://nathanielcohen3.github.io/aura_website/">Project page</a></span>
+            <span class="links"><a href="https://kyutai.org/aura">Project page</a></span>
           </li>
           <li>
             Paper &ldquo;Stochastic Orthogonal Regularization for Deep Projective Priors&rdquo;, with Ali Joundi
@@ -193,6 +198,7 @@ ABOUT_BODY = """
           <li><a href="https://nathanielcohen3.github.io/">Nathaniel Cohen</a> (since 2026)</li>
           <li>Antoine Crosnier (since 2026)</li>
           <li>Lucie Quelin (since 2026)</li>
+          <li>Klervi Le Dortz (since 2026)</li>
           <li><a href="https://pegah-kh.github.io/">Pegah Khayatan</a> (since 2025)</li>
           <li>Kimia Sadreddini (PhD student since 2025)</li>
           <li>Jules Ripoll (PhD student since 2023)</li>
@@ -368,7 +374,7 @@ PUBLICATIONS = [
         ("When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs", "P. Khayatan, J. Parekh, A. Dapogny, M. Shukor, A. Newson, M. Cord", "NeurIPS 2026",
          [("Preprint", "https://arxiv.org/abs/2604.21911")]),
         ("AURA: AUdio-dRiven streaming Avatar", "N. Cohen, N. Dufour, A. Royer, P. Pérez, A. Newson", "BMVC 2026",
-         [("Project", "https://nathanielcohen3.github.io/aura_website/")]),
+         [("Project", "https://kyutai.org/aura")]),
         ("Stochastic Orthogonal Regularization for Deep Projective Priors", "A. Joundi, Y. Traonmilin, A. Newson", "SIAM Journal on Imaging Sciences",
          [("Preprint", "https://arxiv.org/abs/2505.13078")]),
         ("FlowID: Enhancing Forensic Identification with Latent Flow-Matching Models", "J. Ripoll, D. Bertoin, C. Dossal, A. Newson", "IJCAI 2026 (AI and Social Good Track)",
