@@ -176,7 +176,7 @@ ABOUT_BODY = """
           <li>
             Paper &ldquo;AURA: AUdio-dRiven streaming Avatar&rdquo;, with Nathaniel Cohen, Nicolas Dufour,
             Amélie Royer and Patrick Pérez, was accepted to <em>BMVC 2026</em>!
-            <span class="links"><a href="https://kyutai.org/aura">Project page</a></span>
+            <span class="links"><a href="https://kyutai.org/aura">Project page</a> <strong>(with online demo)</strong></span>
           </li>
           <li>
             Paper &ldquo;Stochastic Orthogonal Regularization for Deep Projective Priors&rdquo;, with Ali Joundi
@@ -374,7 +374,7 @@ PUBLICATIONS = [
         ("When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs", "P. Khayatan, J. Parekh, A. Dapogny, M. Shukor, A. Newson, M. Cord", "NeurIPS 2026",
          [("Preprint", "https://arxiv.org/abs/2604.21911")]),
         ("AURA: AUdio-dRiven streaming Avatar", "N. Cohen, N. Dufour, A. Royer, P. Pérez, A. Newson", "BMVC 2026",
-         [("Project", "https://kyutai.org/aura")]),
+         [("Project", "https://kyutai.org/aura"), ("<strong>(with online demo)</strong>", None)]),
         ("Stochastic Orthogonal Regularization for Deep Projective Priors", "A. Joundi, Y. Traonmilin, A. Newson", "SIAM Journal on Imaging Sciences",
          [("Preprint", "https://arxiv.org/abs/2505.13078")]),
         ("FlowID: Enhancing Forensic Identification with Latent Flow-Matching Models", "J. Ripoll, D. Bertoin, C. Dossal, A. Newson", "IJCAI 2026 (AI and Social Good Track)",
@@ -492,7 +492,16 @@ def pubs_html() -> str:
             title, authors, venue, links = item[0], item[1], item[2], item[3]
             award = item[4] if len(item) > 4 else False
             badge = ' <span class="badge">Best student paper</span>' if award else ""
-            link_html = " · ".join(f'<a href="{h}">{t}</a>' for t, h in links if h and h != "#")
+            link_parts = []
+            for t, h in links:
+                if h and h != "#":
+                    link_parts.append(f'<a href="{h}">{t}</a>')
+                elif h is None:
+                    if link_parts:
+                        link_parts[-1] = link_parts[-1] + f" {t}"
+                    else:
+                        link_parts.append(t)
+            link_html = " · ".join(link_parts)
             missing = [t for t, h in links if h == "#"]
             if missing:
                 extra = " · ".join(f'<span style="color:var(--muted)">{t}</span>' for t in missing)
